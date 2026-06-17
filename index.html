@@ -3,37 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>AI Stock Radar</title>
 
 <style>
-
 body{
+font-family:Arial;
 background:#0f172a;
 color:white;
-font-family:Arial;
-padding:15px;
-}
-
-h1{
-text-align:center;
+padding:20px;
 }
 
 .card{
 background:#1e293b;
-padding:15px;
-border-radius:10px;
-margin-bottom:15px;
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:10px;
+border-bottom:1px solid #334155;
+text-align:left;
 }
 
 .score{
-font-size:22px;
+color:#22c55e;
 font-weight:bold;
+}
+
+.buy{
 color:#22c55e;
 }
 
-</style>
+.watch{
+color:#facc15;
+}
 
+.risk{
+color:#ef4444;
+}
+</style>
 </head>
 
 <body>
@@ -43,10 +57,44 @@ color:#22c55e;
 <div class="card">
 <h2>Top Opportunities</h2>
 
-<div>NVDA <span class="score">92</span></div>
-<div>PLTR <span class="score">89</span></div>
-<div>SOFI <span class="score">87</span></div>
+<table>
+<tr>
+<th>Symbol</th>
+<th>Score</th>
+<th>Type</th>
+</tr>
 
+<tr>
+<td>NVDA</td>
+<td class="score">92</td>
+<td>AI Growth</td>
+</tr>
+
+<tr>
+<td>PLTR</td>
+<td class="score">89</td>
+<td>Momentum</td>
+</tr>
+
+<tr>
+<td>SOFI</td>
+<td class="score">87</td>
+<td>Fintech</td>
+</tr>
+
+<tr>
+<td>MSTY</td>
+<td class="score">82</td>
+<td>High Yield</td>
+</tr>
+
+<tr>
+<td>CONY</td>
+<td class="score">79</td>
+<td>Income</td>
+</tr>
+
+</table>
 </div>
 
 <div class="card">
@@ -57,21 +105,33 @@ color:#22c55e;
 <li>CONY</li>
 <li>SLNH</li>
 <li>NVDA</li>
+<li>PLTR</li>
+<li>TSLA</li>
 </ul>
+
+</div>
+
+<div class="card">
+<h2>🚀 Hot Stocks Tonight</h2>
+
+<p class="buy">NVDA - AI Demand Strong</p>
+<p class="buy">PLTR - Momentum Breakout</p>
+<p class="buy">SOFI - High Volume</p>
 
 </div>
 
 <div class="card">
 <h2>📰 Market News</h2>
 
-<p>NVIDIA ได้รับแรงหนุนจากกระแส AI อย่างต่อเนื่อง</p>
+<p>NVIDIA ยังได้แรงหนุนจาก AI อย่างต่อเนื่อง</p>
+<p>Palantir มีแรงซื้อจากนักลงทุนสถาบัน</p>
 
 </div>
 
 <div class="card">
-<h2>🚨 Risk Alert</h2>
+<h2>⚠️ Risk Alert</h2>
 
-<p>ยังไม่มีสัญญาณเตือนสำคัญ</p>
+<p class="risk">ยังไม่มีสัญญาณเตือนสำคัญ</p>
 
 </div>
 

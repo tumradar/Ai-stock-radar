@@ -7,17 +7,22 @@
 
 <style>
 body{
-font-family:Arial;
+font-family:Arial,sans-serif;
 background:#0f172a;
 color:white;
-padding:20px;
+padding:15px;
+margin:0;
+}
+
+h1{
+text-align:center;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:15px;
 border-radius:15px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 table{
@@ -36,16 +41,8 @@ color:#22c55e;
 font-weight:bold;
 }
 
-.buy{
-color:#22c55e;
-}
-
-.watch{
-color:#facc15;
-}
-
-.risk{
-color:#ef4444;
+.section-title{
+margin-top:0;
 }
 </style>
 </head>
@@ -55,83 +52,65 @@ color:#ef4444;
 <h1>🚀 AI Stock Radar</h1>
 
 <div class="card">
-<h2>Top Opportunities</h2>
-
+<h2 class="section-title">🚀 Hot Stocks Today</h2>
 <table>
-<tr>
-<th>Symbol</th>
-<th>Score</th>
-<th>Type</th>
-</tr>
-
-<tr>
-<td>NVDA</td>
-<td class="score">92</td>
-<td>AI Growth</td>
-</tr>
-
-<tr>
-<td>PLTR</td>
-<td class="score">89</td>
-<td>Momentum</td>
-</tr>
-
-<tr>
-<td>SOFI</td>
-<td class="score">87</td>
-<td>Fintech</td>
-</tr>
-
-<tr>
-<td>MSTY</td>
-<td class="score">82</td>
-<td>High Yield</td>
-</tr>
-
-<tr>
-<td>CONY</td>
-<td class="score">79</td>
-<td>Income</td>
-</tr>
-
+<tr><th>Symbol</th><th>Score</th></tr>
+<tr><td>PLTR</td><td class="score">93</td></tr>
+<tr><td>SOFI</td><td class="score">91</td></tr>
+<tr><td>RKLB</td><td class="score">89</td></tr>
+<tr><td>ASTS</td><td class="score">88</td></tr>
 </table>
 </div>
 
 <div class="card">
-<h2>⭐ My Watchlist</h2>
+<h2 class="section-title">📈 Growth Picks</h2>
+<table>
+<tr><th>Symbol</th><th>Score</th></tr>
+<tr><td>NVDA</td><td class="score">95</td></tr>
+<tr><td>AMD</td><td class="score">90</td></tr>
+<tr><td>TSM</td><td class="score">89</td></tr>
+<tr><td>MSFT</td><td class="score">88</td></tr>
+</table>
+</div>
 
-<ul>
-<li>MSTY</li>
-<li>CONY</li>
-<li>SLNH</li>
-<li>NVDA</li>
-<li>PLTR</li>
-<li>TSLA</li>
-</ul>
+<div class="card">
+<h2 class="section-title">💰 Income Picks</h2>
+<table>
+<tr><th>Symbol</th><th>Score</th></tr>
+<tr><td>MSTY</td><td class="score">84</td></tr>
+<tr><td>CONY</td><td class="score">81</td></tr>
+<tr><td>NVDY</td><td class="score">80</td></tr>
+<tr><td>YMAX</td><td class="score">78</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2 class="section-title">⭐ My Watchlist</h2>
+
+MSTY<br>
+CONY<br>
+SLNH<br>
+NVDA<br>
+PLTR<br>
+TSLA<br>
+RKLB<br>
+SOFI
 
 </div>
 
 <div class="card">
-<h2>🚀 Hot Stocks Tonight</h2>
+<h2 class="section-title">📰 Market News</h2>
 
-<p class="buy">NVDA - AI Demand Strong</p>
-<p class="buy">PLTR - Momentum Breakout</p>
-<p class="buy">SOFI - High Volume</p>
-
-</div>
-
-<div class="card">
-<h2>📰 Market News</h2>
-
-<p>NVIDIA ยังได้แรงหนุนจาก AI อย่างต่อเนื่อง</p>
-<p>Palantir มีแรงซื้อจากนักลงทุนสถาบัน</p>
+<p>• AI Infrastructure ยังเป็นธีมหลักของตลาด</p>
+<p>• หุ้นกลุ่ม Defense AI ยังมีแรงซื้อ</p>
+<p>• หุ้น Growth กลับมา Outperform ตลาด</p>
 
 </div>
 
 <div class="card">
-<h2>⚠️ Risk Alert</h2>
+<h2 class="section-title">⚠️ Risk Alert</h2>
 
-<p class="risk">ยังไม่มีสัญญาณเตือนสำคัญ</p>
+<p>ระวังหุ้นที่ขึ้นแรงเกิน 30% ภายในระยะสั้น</p>
 
 </div>
 
